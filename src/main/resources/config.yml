@@ -1,0 +1,31 @@
+# DillyyRandomSpawn config
+
+# Which world this applies to. Must match your main world's folder name exactly.
+world: world
+
+# If true, players are randomly teleported the first time they ever join the server.
+spawn-on-first-join: true
+
+# If true, players who die without a bed/respawn anchor set are randomly teleported.
+# If they DO have a bed/anchor, vanilla respawn behavior is used instead (this plugin does nothing).
+spawn-on-death-without-bed: true
+
+# Optional radius limit around 0,0, in blocks. Set to 0 to disable and just use the full world border.
+# Example: 20000 keeps new players from spawning literally at the edge of a huge border.
+respawn-radius: 20000
+
+# How many random attempts to make before giving up and falling back to world spawn (0,0).
+max-attempts: 50
+
+# Blocks considered unsafe to spawn on top of.
+unsafe-blocks:
+  - LAVA
+  - WATER
+  - CACTUS
+  - MAGMA_BLOCK
+  - FIRE
+  - SWEET_BERRY_BUSH
+  - POWDER_SNOW
+
+# Message shown to players when they're randomly spawned. Supports & color codes.
+message: "&aYou've been placed somewhere random in the world. Good luck!"
